@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #181a1b;
+}
+  
+.container {
+    display: flex;
+  }
+  
+.month-buttons {
+    width: 200px;
+    padding: 20px;
+    background-color: #202325;
+  }
+  
+  .month-buttons button {
+    display: block;
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .month-buttons button:hover {
+    background-color: #0D47A1;
+  }
+  
+  .calendar {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .weekdays div {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 120px;
+    color: white;
+  }
+  
+  .day {
+    text-align: center;
+    padding: 10px;
+    height: 85%;
+    margin-bottom: 20px;
+    background-color: #202325;
+  }
+  
+  .daygray {
+    text-align: center;
+    padding: 10px;
+    height: 85%;
+    margin-bottom: 20px;
+    background-color: #202325;
+    color: gray;
+  }
+  
+  .messages {
+    margin-top: 5px;
+    font-size: 12px;
+    overflow-y: auto;
+    max-height: calc(100% - 20px);
+  }
+  
+  .message {
+    margin-bottom: 5px;
+    color: white;
+    text-decoration:none;
+  }
+  
+  .current-month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
